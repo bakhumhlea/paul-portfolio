@@ -1,0 +1,29 @@
+.about {
+  height: 100%;
+  color: rgb(46, 46, 46);
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 2rem;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.about h4 {
+  color: #232323;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  /* margin-bottom: 40px; */
+  top: 10vh;
+}
+.about span.text-em {
+  color: #c458f7;
+}
+.about a {
+  color: #c458f7;
+  font-weight: 500;
+  text-decoration: underline;
+}

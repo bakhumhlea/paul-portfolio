@@ -1,0 +1,82 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Paul Chaysawat | Portfolio</title>
+  <link rel="stylesheet" href="css/main.css"></link>
+  <link rel="stylesheet" href="css/elements.css"></link>
+  <link href="https://fonts.googleapis.com/css?family=Bitter:400,700|Cabin:400,500,600,700|Encode+Sans+Expanded:100,200,300,400,500,600,700|Libre+Baskerville|Merriweather|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="loading-bar" id="loading-bar">
+    <div class="track-bar" id="track-bar"></div>
+  </div>
+  <div class="menu-bar" id="menu-bar">
+    <ul class="inl-list">
+      <li class="lk-trnst"><a href="content.html">Works</a></li>
+      <li class="lk-trnst"><a href="about.html">About</a></li>
+    </ul>
+  </div>
+  <div class="topleft-el float-el trnst-opac" id="tl-el">
+    <h4 class="title">
+      <span id="dev-title">Web Developer</span>
+      <span class="small-times">
+          <svg width="16" height="16" stroke="white" strokeWidth="1">
+            <path d="M0 0 L16 16"></path>
+            <path d="M0 16 L16 0"></path>
+          </svg>
+      </span>
+      <span id="arch-title">Architect</span>
+    </h4>
+    <h1 class="name">Paul Chaysawat</h1>
+    <h5 id="obj-linkto">WORKS</h5>
+  </div>
+  <div class="topright-el float-el trnst-opac" id="tr-el">
+    <ul class="inl-list">
+      <!-- <li class="lk-trnst">Projects</li>
+      <li class="lk-trnst">About</li> -->
+    </ul>
+  </div>
+  <div class="btn btn-menu trnst-opac" onclick="toggleMenu()" id="menu-btn">
+    <svg width="20" height="50" stroke="white" strokeWidth="2" id="menu-svg" class="menu-svg">
+      <path d="M0 17 L20 17" id="path-01" class="path-svg"></path>
+      <path d="M0 25 L20 25" id="path-02" class="path-svg"></path>
+      <path d="M0 33 L20 33" id="path-03" class="path-svg"></path>
+    </svg>
+  </div>
+  <div class="midleft-el float-el" id="dev-link">
+    <p class="page-link">
+      <span class="name">Paul Chaysawat</span>
+      <span>
+      <span class="small-times">
+        <svg width="16" height="16" stroke="white" strokeWidth="1">
+          <path d="M8 0 L8 16"></path>
+        </svg>
+      </span>
+      </span>
+      <span>Works</span>
+    </p>
+  </div>
+  <div class="midright-el float-el" id="arch-link">
+    <p class="page-link">
+      <span class="name">Paul Chaysawat</span>
+      <span class="small-times">
+        <svg width="16" height="16" stroke="white" strokeWidth="1">
+          <path d="M8 0 L8 16"></path>
+        </svg>
+      </span>
+      <span>About</span>
+    </p>
+  </div>
+  <div class="bottommid-el float-el" id="drag-scroll">
+    <p><small>Drag / Scroll</small></p>
+  </div>
+  <script src="js/three.min.js"></script>
+  <script src="js/OrbitControls.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/scene.js"></script>
+  <script src="js/loading.js"></script>
+</body>
+</html>

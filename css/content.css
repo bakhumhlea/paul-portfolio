@@ -1,0 +1,38 @@
+.img-con {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 55%;
+  height: 500px;
+  /* background-color: #FAFAFA; */
+  /* background-image: url('../assets/images/architects/sample_01.jpg'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  opacity: 0;
+  transform: translate(-50%,-50%);
+  transition: 0.6s 0.1s all cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.proj-list {
+  font-family: 'Raleway','Montserrat', sans-serif;
+  font-size: 1.4rem;
+  margin-left: 80px;
+}
+.proj-head {
+  font-weight: 800;
+  margin: 30px 0 15px 0;
+  padding: 0px 10px;
+}
+.proj-link {
+  display: block;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #444444;
+  font-weight: 400;
+  padding: 10px 10px;
+  transition: 0.6s 0.1s all cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.proj-link:hover {
+  color: white;
+  background-color: black;
+}
