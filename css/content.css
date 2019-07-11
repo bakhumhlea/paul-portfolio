@@ -36,3 +36,23 @@
   color: white;
   background-color: black;
 }
+@media only screen and (max-width: 400px) {
+  .grd.content-con {
+    grid-template-columns: 100%;
+  }
+  .proj-list {
+    font-size: 1.1rem;
+    text-align: center;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .proj-list.sm {
+    display: none;
+  }
+  .proj-mobile {
+    width: 100%;
+  }
+  .proj-link {
+    width: auto;
+  }
+}

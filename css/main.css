@@ -451,6 +451,7 @@ div.back-btn {
   width: 100vw;
   color: #110E12;
   background: white;
+  overflow-x: hidden;
 }
 .wrap-cen-70 {
   width: 70%;
@@ -466,4 +467,49 @@ div.back-btn {
   padding: 50px 0;
   height: 30vh;
   color: black;
+}
+@media only screen and (max-width: 400px) {
+  .topleft-el {
+    position: fixed;
+    top: 23px;
+    left: 7%;
+    transform: translateY(0%);
+  }
+  .topleft-el h4.title {
+    font-size: 0.6em;
+  }
+  .topleft-el h1.name {
+    font-size: 1.3rem;
+  }
+  .topleft-el #obj-linkto {
+    opacity: 1;
+    margin: 5px 0;
+    font-size: 0.9em;
+  }
+  .menu-bar ul {
+    top: 50%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .wrap-cen-70 {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .btn.btn-menu {
+    top: 10px;
+    transform: translateY(0%);
+  }
+  .menu-svg, .svg-arrow {
+    width: 30px;
+  }
+  div.back-btn {
+    top: 30px;
+    transform: translateY(0%);
+  }
+  .menu-bar ul li {
+    display: block;
+    width: 100%;
+    padding: 15px 6px;
+  }
 }

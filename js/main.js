@@ -34,20 +34,15 @@ window.onload = function(event) {
   var container = document.getElementById('page-obj');
   container.style.opacity = 1;
 }
-function toggleMenu() {
+function toggleMenu(currentpath) {
   if (menuOn) {
     menuOn = !menuOn;
     sceneHidden = false;
     menu.style.height = `0vh`;
-    menuSvg.setAttribute('stroke',`black`);
+    if (!!!currentpath) {
+      menuSvg.setAttribute('stroke',`black`);
+    }
     if (backBtnSvgPaths) backBtnSvgPaths.setAttribute('stroke',`black`);
-    // if (scrollY > minHeight/2) {
-    //   menuSvg.setAttribute('stroke',`black`);
-    //   if (backBtnSvgPaths) backBtnSvgPaths.setAttribute('stroke',`black`);
-    // } else {
-    //   menuSvg.setAttribute('stroke',`white`);
-    //   if (backBtnSvgPaths) backBtnSvgPaths.setAttribute('stroke',`white`);
-    // }
     morphPathTime(menuPaths);
     setTimeout(() => {
       menu.style.display = 'none';
