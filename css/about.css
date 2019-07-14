@@ -1,9 +1,9 @@
 .about {
   height: 100%;
   color: rgb(46, 46, 46);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 300;
-  line-height: 2rem;
+  line-height: 1.9rem;
   display: flex;
   font-family: 'Poppins', sans-serif;
   flex-direction: column;
@@ -13,7 +13,6 @@
 .about h4 {
   color: #232323;
   font-family: 'Raleway', sans-serif;
-  font-size: 1rem;
   font-weight: 900;
   text-transform: uppercase;
   /* margin-bottom: 40px; */
@@ -27,7 +26,7 @@
   font-weight: 500;
   text-decoration: underline;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 415px) {
   .pos-abs {
     position: relative;
   }

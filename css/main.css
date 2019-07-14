@@ -47,6 +47,21 @@ div#page-obj {
   transition: 3s 0s opacity cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 /* common class */
+.btn.link {
+  font-size: 0.9em;
+  background: #c458f7;
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  transition: 0.5s 0s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.btn.link:hover {
+  background: #c458f7;
+  transform: translateY(-6px);
+  box-shadow: 
+    0 3px 5px 0 rgba(73, 73, 73, 0.158),
+    0 3px 4px 0 rgba(39, 39, 39, 0.185);
+}
 .trnst-opac {
   /* overflow: hidden; */
   opacity: 0;
@@ -325,6 +340,17 @@ div.back-btn {
   letter-spacing: 4px;
   text-shadow: 0 0 8px rgba(73, 73, 73, 0.384);
 }
+.topleft-el div.link-icons {
+  font-size: 1.4em;
+  margin: 5px 0;
+}
+.icon-link {
+  opacity: 0.8;
+  margin-right: 5px;
+}
+.icon-link:hover {
+  opacity: 1;
+}
 .topleft-el h1.name {
   position: relative;
   font-family: 'Raleway','Montserrat', serif;
@@ -356,9 +382,10 @@ div.back-btn {
 }
 .topleft-el #obj-linkto {
   position: absolute;
+  top: -30px;
   font-size: 1rem;
   font-weight: 700;
-  opacity: 0;
+  margin: 0;
 }
 .small-times {
   margin: 0 4px;
@@ -468,23 +495,36 @@ div.back-btn {
   height: 30vh;
   color: black;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 415px) {
   .topleft-el {
     position: fixed;
-    top: 23px;
-    left: 7%;
-    transform: translateY(0%);
+    left: 50vw;
+    transform: translate(-50%, -50%);
+  }
+  .topleft-el div.link-icons {
+    font-size: 1.4em;
+    margin: 8px 0;
+    text-align: center;
+  }
+  .topleft-el div.link-icons .icon-link {
+    opacity: 1;
   }
   .topleft-el h4.title {
-    font-size: 0.6em;
+    font-size: 1em;
+    letter-spacing: 0;
+    font-weight: 600;
+    margin: 0;
+    font-family: 'Poppins';
   }
   .topleft-el h1.name {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
+    letter-spacing: 0;
   }
   .topleft-el #obj-linkto {
-    opacity: 1;
-    margin: 5px 0;
-    font-size: 0.9em;
+    display: none;
+  }
+  .midleft-el, .midright-el {
+    display: none;
   }
   .menu-bar ul {
     top: 50%;
@@ -499,6 +539,11 @@ div.back-btn {
   .btn.btn-menu {
     top: 10px;
     transform: translateY(0%);
+  }
+  .btn.btn-menu.landing {
+    top: 20px;
+    right: 50vw;
+    transform: translateX(50%);
   }
   .menu-svg, .svg-arrow {
     width: 30px;

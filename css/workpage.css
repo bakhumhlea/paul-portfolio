@@ -76,6 +76,15 @@
 .work-link {
   padding-left: 20%;
 }
+.github-link {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+.github-link .logo {
+  font-size: 2em;
+  margin-right: 8px;
+}
 .work-roles {
   /* position: absolute; */
   bottom: 0;
@@ -112,7 +121,7 @@
 }
 
 .work-body.spacial {
-  height: 72vh;
+  height: 75vh;
   /* padding: 60px 0; */
 }
 .work-body.spacial .work-img {
@@ -141,6 +150,11 @@
 .work-body.double .img-frame.lokals {
   height: 100%;
   background: #d5e7ef;
+}
+.work-body.spacial .img-frame.kitchen,
+.work-body.double .img-frame.kitchen {
+  height: 100%;
+  background: #b1fbdc;
 }
 .work-body.spacial .img-frame.lantara {
   height: 100%;
@@ -226,13 +240,26 @@
 .work-img.lokals {
   background: #d5e7ef;
 }
+.work-img.kitchen {
+  background: #b1fbdc;
+}
 .work-img.lantara {
   background: #ebefd8;
 }
 .work-img img,
 .work-img video {
-  box-shadow: 0 0 10px 4px rgba(143, 143, 143, 0.158),
-    0 0 4px 1px rgba(88, 88, 88, 0.158);
+  border-radius: 6px;
+  box-shadow: 
+    0 5px 20px 4px rgba(197, 197, 197, 0.18), 
+    0 2px 10px 4px rgba(105, 105, 105, 0.158), 
+    0 0 4px 1px rgba(66, 66, 66, 0.158);
+}
+.work-img img.dark-sha, 
+.work-img video.dark-sha {
+  box-shadow: 
+    0 5px 20px 4px rgba(88, 88, 88, 0.18), 
+    0 2px 10px 4px rgba(78, 78, 78, 0.158), 
+    0 0 4px 1px rgba(64, 64, 64, 0.158);
 }
 .work-img.zupply video {
   border-radius: 6px;
@@ -258,7 +285,8 @@
   transform: translate(4px, 5px);
 }
 .common-link:hover {
-  transform: translate(4px, 2px);
+  color: #cc83ee;
+  /* transform: translate(4px, 2px); */
 }
 .next-link-group {
   bottom: 0;
@@ -283,7 +311,7 @@
   transform: translateX(5px);
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 415px) {
   .menu-bar {
     font-size: 0.9em;
   }
@@ -306,12 +334,22 @@
     grid-template-columns: 100%;
   }
   .work-title {
+    width: 65vw;
     font-size: 2rem;
     line-height: 2rem;
     margin-left: 20%;
   }
   .work-details {
     margin-left: 20%;
+  }
+  .work-misc {
+    margin-top: 10px;
+  }
+  .github-link {
+    transform: translateX(-31px);
+  }
+  .github-link .logo {
+    font-size: 1.6em;
   }
   .img-con-01 {
     height: 40vh;
@@ -363,6 +401,9 @@
   .work-body.spacial {
     height: 50vh;
     /* padding: 60px 0; */
+  }
+  .work-body.spacial .img-frame .work-img.mobile {
+    height: auto;
   }
   .work-body.spacial .img-frame .work-img {
     width: 100vw;

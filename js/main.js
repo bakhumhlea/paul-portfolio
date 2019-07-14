@@ -26,13 +26,14 @@ backBtnSvgPaths = document.getElementById('svg-arrow');
 
 tlEl = document.getElementById('tl-el');
 trEl = document.getElementById('tr-el');
+icons = document.getElementById('link-icons');
 
 var timePaths = ['M0 15 L20 35','M0 15 L20 35','M0 35 L20 15'];
 var menuPaths = ['M0 17 L20 17','M0 25 L20 25','M0 33 L20 33'];
 
 window.onload = function(event) {
   var container = document.getElementById('page-obj');
-  container.style.opacity = 1;
+  if (container) container.style.opacity = 1;
 }
 function toggleMenu(currentpath) {
   if (menuOn) {

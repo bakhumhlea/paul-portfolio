@@ -290,12 +290,14 @@ function onControlsChange() {
     menuBtn.style.opacity = 1;
     tlEl.style.opacity = 1;
     trEl.style.opacity = 1;
+    icons.style.display = 'block';
     devlink.style.opacity = 0;
     archlink.style.opacity = 0;
   } else {
     menuBtn.style.opacity = 0;
     tlEl.style.opacity = 0;
     trEl.style.opacity = 0;
+    icons.style.display = 'none';
   }
   render();
 }
@@ -396,7 +398,7 @@ function onOpenPage(url) {
     transitionObj.style.left = event.clientX;
     document.body.append(transitionObj);
     setTimeout(()=>{
-      transitionObj.style.height = (window.innerWidth * 1.5)+'px';
+      transitionObj.style.height = (window.innerWidth * 2)+'px';
       // transitionObj.style.backgroundColor = `rgb(17, 14, 18)`;
       transitionObj.style.width = (window.innerWidth * 3)+'px';
     },100);
@@ -412,8 +414,8 @@ function expandTransition() {
   transitionObj.style.left = event.clientX;
   document.body.append(transitionObj);
   setTimeout(()=>{
-    transitionObj.style.width = window.innerWidth * 1.8;
-    transitionObj.style.height = window.innerWidth * 1.8;
+    transitionObj.style.width = window.innerWidth * 2;
+    transitionObj.style.height = window.innerWidth * 3;
   },200);
 }
 function onDragScroll(event) {
